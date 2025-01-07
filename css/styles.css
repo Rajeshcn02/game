@@ -1,0 +1,58 @@
+body {
+       font-family: Arial, sans-serif;
+       text-align: center;
+       margin: 20px;
+   }
+   .player-input-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 20px;
+   }
+   .player-input-container div {
+       margin: 10px 0;
+   }
+   .start-button, .restart-button {
+       padding: 10px 20px;
+       font-size: 16px;
+       cursor: pointer;
+       background-color: #4CAF50;
+       color: white;
+       border: none;
+       border-radius: 5px;
+   }
+   .restart-button {
+       margin-top: 20px;
+       background-color: #f44336;
+   }
+   .game-container {
+       display: none; /* Hide game until players start */
+   }
+   .grid {
+       display: grid;
+       gap: 10px;
+       justify-content: center;
+   }
+   .cell {
+       background-color: #ddd;
+       border: 1px solid #ccc;
+       padding: 20px;
+       font-size: 24px;
+       font-weight: bold;
+       cursor: pointer;
+       text-align: center;
+       transition: background-color 0.3s, color 0.3s;
+       color: transparent;
+   }
+   .revealed {
+       background-color: #fff;
+       color: #000;
+   }
+   .hidden {
+       background-color: #ddd;
+       color: transparent;
+   }
+   .winner {
+       background-color: #4CAF50;
+       color: white;
+   }
