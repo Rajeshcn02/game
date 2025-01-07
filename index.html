@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Memory Test Game</title>
+       <link rel="stylesheet" href="./css/styles.css">
+   </head>
+   <body>
+       <h1>Memory Test Game</h1>
+       <div class="player-input-container">
+           <div>
+               <label for="player1-name">Player 1 Name:</label>
+               <input type="text" id="player1-name" placeholder="Enter Player 1 Name">
+           </div>
+           <div>
+               <label for="player2-name">Player 2 Name:</label>
+               <input type="text" id="player2-name" placeholder="Enter Player 2 Name">
+           </div>
+           <div>
+               <label for="grid-size">Select Grid Size:</label>
+               <select id="grid-size">
+                   <option value="2">2x2</option>
+                   <option value="3">3x3</option>
+                   <option value="4" selected>4x4</option>
+                   <option value="5">5x5</option>
+               </select>
+           </div>
+           <div>
+               <button class="start-button" onclick="startGame()">Start Game</button>
+           </div>
+       </div>
+
+       <div class="game-container">
+           <h3 id="current-player"></h3>
+           <div class="grid" id="number-grid"></div>
+           <h3 id="status"></h3>
+           <button class="restart-button" onclick="restartGame()">Restart Game</button>
+       </div>
+
+       <script src="./js/script.js"></script>
+   </body>
+   </html>
